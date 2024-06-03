@@ -17,6 +17,8 @@
 		D1DC45C72C0D8C6800A3F79C /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45C62C0D8C6800A3F79C /* SplashPage.swift */; };
 		D1DC45CB2C0D903E00A3F79C /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45CA2C0D903E00A3F79C /* SignupPage.swift */; };
 		D1DC45CE2C0D9B2E00A3F79C /* CustomSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45CD2C0D9B2E00A3F79C /* CustomSpace.swift */; };
+		D1DC45D02C0DD01600A3F79C /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45CF2C0DD01600A3F79C /* CustomWebView.swift */; };
+		D1DC45D62C0DD3A400A3F79C /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45D52C0DD3A400A3F79C /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		D1DC45C62C0D8C6800A3F79C /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
 		D1DC45CA2C0D903E00A3F79C /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		D1DC45CD2C0D9B2E00A3F79C /* CustomSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpace.swift; sourceTree = "<group>"; };
+		D1DC45CF2C0DD01600A3F79C /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
+		D1DC45D52C0DD3A400A3F79C /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		D1DC45C22C0D88C500A3F79C /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				D1DC45D32C0DD37E00A3F79C /* Home */,
 				D1DC45C82C0D902100A3F79C /* Auth */,
 				D1DC45C32C0D8C3900A3F79C /* Onboarding */,
 			);
@@ -188,6 +193,23 @@
 			isa = PBXGroup;
 			children = (
 				D1DC45CD2C0D9B2E00A3F79C /* CustomSpace.swift */,
+				D1DC45CF2C0DD01600A3F79C /* CustomWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1DC45D32C0DD37E00A3F79C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45D42C0DD38300A3F79C /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D1DC45D42C0DD38300A3F79C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45D52C0DD3A400A3F79C /* HomePage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,8 +346,10 @@
 			files = (
 				D1DC459A2C0D88A500A3F79C /* Application.swift in Sources */,
 				D1DC45C72C0D8C6800A3F79C /* SplashPage.swift in Sources */,
+				D1DC45D02C0DD01600A3F79C /* CustomWebView.swift in Sources */,
 				D1DC45CB2C0D903E00A3F79C /* SignupPage.swift in Sources */,
 				D1DC45CE2C0D9B2E00A3F79C /* CustomSpace.swift in Sources */,
+				D1DC45D62C0DD3A400A3F79C /* HomePage.swift in Sources */,
 				D1DC45982C0D88A500A3F79C /* NikeCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

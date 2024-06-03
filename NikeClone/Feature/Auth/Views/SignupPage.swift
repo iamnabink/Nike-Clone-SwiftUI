@@ -46,6 +46,7 @@ struct Background: View {
 
 struct Buttons: View {
     @State private var showingAlert = false
+    @State private var showingWebView = false
     var body: some View {
         HStack{
             Button(action: {
@@ -66,13 +67,17 @@ struct Buttons: View {
                 )
                 
             })
+            
+            
             Button(action: {
-                print("Sign in")
+                showingWebView = true
             }, label: {
                 Text("Sign in").foregroundColor(.white).padding(.horizontal,40).padding(.vertical,15)
             }).background(
                 RoundedRectangle(cornerRadius: 25.0).fill(.clear).strokeBorder(.white)
-            )
+            ).sheet(isPresented: $showingWebView, content: {
+                CustomWebView(url: URL(string:"https://www.nike.com/login")!)
+            })
             
             
         }
