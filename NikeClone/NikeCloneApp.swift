@@ -11,7 +11,7 @@ import SwiftUI
 struct NikeCloneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Application()
         }
     }
 }

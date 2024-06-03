@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D1DC45982C0D88A500A3F79C /* NikeCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45972C0D88A500A3F79C /* NikeCloneApp.swift */; };
-		D1DC459A2C0D88A500A3F79C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45992C0D88A500A3F79C /* ContentView.swift */; };
+		D1DC459A2C0D88A500A3F79C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45992C0D88A500A3F79C /* Application.swift */; };
 		D1DC459C2C0D88A600A3F79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DC459B2C0D88A600A3F79C /* Assets.xcassets */; };
 		D1DC459F2C0D88A600A3F79C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DC459E2C0D88A600A3F79C /* Preview Assets.xcassets */; };
 		D1DC45A92C0D88A600A3F79C /* NikeCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45A82C0D88A600A3F79C /* NikeCloneTests.swift */; };
 		D1DC45B32C0D88A600A3F79C /* NikeCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45B22C0D88A600A3F79C /* NikeCloneUITests.swift */; };
 		D1DC45B52C0D88A600A3F79C /* NikeCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45B42C0D88A600A3F79C /* NikeCloneUITestsLaunchTests.swift */; };
+		D1DC45C72C0D8C6800A3F79C /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45C62C0D8C6800A3F79C /* SplashPage.swift */; };
+		D1DC45CB2C0D903E00A3F79C /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45CA2C0D903E00A3F79C /* SignupPage.swift */; };
+		D1DC45CE2C0D9B2E00A3F79C /* CustomSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45CD2C0D9B2E00A3F79C /* CustomSpace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		D1DC45942C0D88A500A3F79C /* NikeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DC45972C0D88A500A3F79C /* NikeCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCloneApp.swift; sourceTree = "<group>"; };
-		D1DC45992C0D88A500A3F79C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1DC45992C0D88A500A3F79C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		D1DC459B2C0D88A600A3F79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1DC459E2C0D88A600A3F79C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1DC45A42C0D88A600A3F79C /* NikeCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		D1DC45AE2C0D88A600A3F79C /* NikeCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DC45B22C0D88A600A3F79C /* NikeCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCloneUITests.swift; sourceTree = "<group>"; };
 		D1DC45B42C0D88A600A3F79C /* NikeCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1DC45C62C0D8C6800A3F79C /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		D1DC45CA2C0D903E00A3F79C /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
+		D1DC45CD2C0D9B2E00A3F79C /* CustomSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSpace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,10 @@
 		D1DC45962C0D88A500A3F79C /* NikeClone */ = {
 			isa = PBXGroup;
 			children = (
+				D1DC45C22C0D88C500A3F79C /* Feature */,
+				D1DC45C12C0D88BD00A3F79C /* Core */,
 				D1DC45972C0D88A500A3F79C /* NikeCloneApp.swift */,
-				D1DC45992C0D88A500A3F79C /* ContentView.swift */,
+				D1DC45992C0D88A500A3F79C /* Application.swift */,
 				D1DC459B2C0D88A600A3F79C /* Assets.xcassets */,
 				D1DC459D2C0D88A600A3F79C /* Preview Content */,
 			);
@@ -125,6 +133,63 @@
 				D1DC45B42C0D88A600A3F79C /* NikeCloneUITestsLaunchTests.swift */,
 			);
 			path = NikeCloneUITests;
+			sourceTree = "<group>";
+		};
+		D1DC45C12C0D88BD00A3F79C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45CC2C0D9B1D00A3F79C /* Views */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D1DC45C22C0D88C500A3F79C /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45C82C0D902100A3F79C /* Auth */,
+				D1DC45C32C0D8C3900A3F79C /* Onboarding */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		D1DC45C32C0D8C3900A3F79C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45C42C0D8C4100A3F79C /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D1DC45C42C0D8C4100A3F79C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45C62C0D8C6800A3F79C /* SplashPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1DC45C82C0D902100A3F79C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45C92C0D902700A3F79C /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D1DC45C92C0D902700A3F79C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45CA2C0D903E00A3F79C /* SignupPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1DC45CC2C0D9B1D00A3F79C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1DC45CD2C0D9B2E00A3F79C /* CustomSpace.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DC459A2C0D88A500A3F79C /* ContentView.swift in Sources */,
+				D1DC459A2C0D88A500A3F79C /* Application.swift in Sources */,
+				D1DC45C72C0D8C6800A3F79C /* SplashPage.swift in Sources */,
+				D1DC45CB2C0D903E00A3F79C /* SignupPage.swift in Sources */,
+				D1DC45CE2C0D9B2E00A3F79C /* CustomSpace.swift in Sources */,
 				D1DC45982C0D88A500A3F79C /* NikeCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
