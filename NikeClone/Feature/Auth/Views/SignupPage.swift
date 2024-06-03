@@ -56,8 +56,8 @@ struct Buttons: View {
             ).padding(.trailing,10).alert(isPresented: $showingAlert, content: {
                 
                 Alert(
-                    title: Text("Permission Needed"),
-                    message: Text("We need your permission to access the camera."),
+                    title: Text("“Nike” Wants to Use “nike.com” to Sign In"),
+                    message: Text("This allows the app ans website to share information about you."),
                     primaryButton: .default(Text("Continue")) {
                         // Handle "OK" action here
                         
