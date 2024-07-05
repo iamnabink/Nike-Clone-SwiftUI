@@ -28,7 +28,7 @@ struct RootNavPage: View {
                             
                             
                         }
-                        Text("Profile").tabItem {
+                        SignupPage().tabItem {
                             Image(systemName: "person")
                             Text("Profile")
                             

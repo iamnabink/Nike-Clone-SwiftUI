@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct SignupPage: View {
     var body: some View {
@@ -60,7 +61,7 @@ struct Buttons: View {
                     title: Text("“Nike” Wants to Use “nike.com” to Sign In"),
                     message: Text("This allows the app ans website to share information about you."),
                     primaryButton: .default(Text("Continue")) {
-                        // Handle "OK" action here
+                        
                         
                     },
                     secondaryButton: .cancel()
@@ -76,10 +77,52 @@ struct Buttons: View {
             }).background(
                 RoundedRectangle(cornerRadius: 25.0).fill(.clear).strokeBorder(.white)
             ).sheet(isPresented: $showingWebView, content: {
-                CustomWebView(url: URL(string:"https://www.nike.com/login")!)
+                ZStack {
+                    
+                    CustomBottomSheet(showingWebView:$showingWebView)
+                    
+                }
             })
-            
-            
+        }
+    }
+    
+    struct CustomBottomSheet: View {
+        @Binding var showingWebView: Bool
+        @ObservedObject var webViewModel = WebViewModel(url: "https://www.nike.com/login")
+
+        var body: some View {
+            VStack {
+                VStack{
+                    CustomSpace(height: 10)
+                    HStack {
+                        Button(action: {
+                            // Cancel action
+                            showingWebView = false
+                        }) {
+                            Text("Cancel")
+                            
+                        }
+                        Spacer()
+                        Button(action: {
+                            // Reload action
+                            //                                       reloadContent()
+                        }) {
+                            Image(systemName: "arrow.clockwise")
+                        }
+                    }
+                    .padding()
+                    Divider()
+                }.background(.gray.opacity(0.1))
+                
+                ZStack {
+                    CustomWebView(webViewModel: webViewModel)
+                    if webViewModel.isLoading {
+                                        ProgressView()
+                                            .frame(height: 30)
+                                    }
+                }
+            }
         }
     }
 }
+

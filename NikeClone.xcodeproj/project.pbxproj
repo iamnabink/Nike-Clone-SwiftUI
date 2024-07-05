@@ -101,6 +101,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D1C300A72C380E410055F8E0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D1DC458B2C0D88A500A3F79C = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +237,7 @@
 		D1DC45D42C0DD38300A3F79C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D1C300A72C380E410055F8E0 /* Components */,
 				D1DC45D52C0DD3A400A3F79C /* HomePage.swift */,
 				D143BE522C0E287100FE4002 /* ItemCollectionPage.swift */,
 			);

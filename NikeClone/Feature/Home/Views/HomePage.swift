@@ -26,7 +26,7 @@ struct HomePage: View {
                 })
                 Spacer()
                 
-            }
+            }.navigationTitle("").navigationBarTitleDisplayMode(.large)
         }
     }
 }
