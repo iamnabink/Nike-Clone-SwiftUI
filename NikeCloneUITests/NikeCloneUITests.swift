@@ -2,7 +2,7 @@
 //  NikeCloneUITests.swift
 //  NikeCloneUITests
 //
-//  Created by nex on 03/06/2024.
+//  Created by Nabraj Khadka on 03/06/2024.
 //
 
 import XCTest

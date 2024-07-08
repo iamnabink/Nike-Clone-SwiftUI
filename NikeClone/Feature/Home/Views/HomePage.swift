@@ -13,14 +13,14 @@ struct HomePage: View {
         NavigationStack {
             ScrollView(showsIndicators: false){
                 VStack(alignment: .leading, content: {
-                    TitieView()
+                    TopTitieView()
                     CustomSpace(height: 30)
                     Image("HomeItem1").resizable().padding(.bottom,10)
                     VStack(alignment: .leading){
                         Text("What's New").font(.title3.bold()).padding(.vertical,10)
                         Text("The latest arrivals from Nike").font(.title).padding(.bottom,10)
                         ScrollView(.horizontal,showsIndicators: false) {
-                            ItemList()
+                            LatestArrivalList()
                         }
                     }.padding(.horizontal,10)
                 })
@@ -35,7 +35,7 @@ struct HomePage: View {
     HomePage()
 }
 
-struct TitieView: View {
+struct TopTitieView: View {
     
     var body: some View {
         VStack(alignment: .leading){
@@ -45,17 +45,17 @@ struct TitieView: View {
     }
 }
 
-struct ItemList: View {
+struct LatestArrivalList: View {
     var body: some View {
        
         HStack(){
             NavigationLink(destination: {
-                ItemCollectionPage()
+                LatestArrivalListPage()
             }, label: {
                 Image("HomeItem2")
             })
             NavigationLink(destination: {
-                ItemCollectionPage()
+                LatestArrivalListPage()
             }, label: {
                 Image("HomeItem2")
             })

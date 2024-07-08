@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1213E6E2C3C445E00BDC8D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1213E6D2C3C445E00BDC8D6 /* Extensions.swift */; };
 		D143BE512C0E1F9900FE4002 /* RootNavPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143BE502C0E1F9900FE4002 /* RootNavPage.swift */; };
-		D143BE532C0E287100FE4002 /* ItemCollectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143BE522C0E287100FE4002 /* ItemCollectionPage.swift */; };
+		D143BE532C0E287100FE4002 /* LatestArrivalListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143BE522C0E287100FE4002 /* LatestArrivalListPage.swift */; };
 		D1DC45982C0D88A500A3F79C /* NikeCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45972C0D88A500A3F79C /* NikeCloneApp.swift */; };
 		D1DC459A2C0D88A500A3F79C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DC45992C0D88A500A3F79C /* Application.swift */; };
 		D1DC459C2C0D88A600A3F79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DC459B2C0D88A600A3F79C /* Assets.xcassets */; };
@@ -41,8 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1213E6D2C3C445E00BDC8D6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D143BE502C0E1F9900FE4002 /* RootNavPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavPage.swift; sourceTree = "<group>"; };
-		D143BE522C0E287100FE4002 /* ItemCollectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionPage.swift; sourceTree = "<group>"; };
+		D143BE522C0E287100FE4002 /* LatestArrivalListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestArrivalListPage.swift; sourceTree = "<group>"; };
 		D1DC45942C0D88A500A3F79C /* NikeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NikeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DC45972C0D88A500A3F79C /* NikeCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCloneApp.swift; sourceTree = "<group>"; };
 		D1DC45992C0D88A500A3F79C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1213E6C2C3C444C00BDC8D6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D1213E6D2C3C445E00BDC8D6 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D143BE4E2C0E1CEF00FE4002 /* RootNavigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		D1DC45962C0D88A500A3F79C /* NikeClone */ = {
 			isa = PBXGroup;
 			children = (
+				D1213E6C2C3C444C00BDC8D6 /* Utils */,
 				D1DC45C22C0D88C500A3F79C /* Feature */,
 				D1DC45C12C0D88BD00A3F79C /* Core */,
 				D1DC45972C0D88A500A3F79C /* NikeCloneApp.swift */,
@@ -239,7 +250,7 @@
 			children = (
 				D1C300A72C380E410055F8E0 /* Components */,
 				D1DC45D52C0DD3A400A3F79C /* HomePage.swift */,
-				D143BE522C0E287100FE4002 /* ItemCollectionPage.swift */,
+				D143BE522C0E287100FE4002 /* LatestArrivalListPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,9 +387,10 @@
 			files = (
 				D1DC459A2C0D88A500A3F79C /* Application.swift in Sources */,
 				D1DC45C72C0D8C6800A3F79C /* SplashPage.swift in Sources */,
-				D143BE532C0E287100FE4002 /* ItemCollectionPage.swift in Sources */,
+				D143BE532C0E287100FE4002 /* LatestArrivalListPage.swift in Sources */,
 				D143BE512C0E1F9900FE4002 /* RootNavPage.swift in Sources */,
 				D1DC45D02C0DD01600A3F79C /* CustomWebView.swift in Sources */,
+				D1213E6E2C3C445E00BDC8D6 /* Extensions.swift in Sources */,
 				D1DC45CB2C0D903E00A3F79C /* SignupPage.swift in Sources */,
 				D1DC45CE2C0D9B2E00A3F79C /* CustomSpace.swift in Sources */,
 				D1DC45D62C0DD3A400A3F79C /* HomePage.swift in Sources */,
