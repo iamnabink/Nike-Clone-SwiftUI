@@ -15,7 +15,9 @@ struct HomePage: View {
                 VStack(alignment: .leading, content: {
                     TopTitieView()
                     CustomSpace(height: 30)
-                    Image("HomeItem1").resizable().padding(.bottom,10)
+                    NavigationLink(destination: EventDetailPage(), label: {
+                        Image("HomeItem1").resizable().padding(.bottom,10)
+                    })
                     VStack(alignment: .leading){
                         Text("What's New").font(.title3.bold()).padding(.vertical,10)
                         Text("The latest arrivals from Nike").font(.title).padding(.bottom,10)
