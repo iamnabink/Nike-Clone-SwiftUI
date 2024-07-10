@@ -14,9 +14,9 @@ struct RootNavPage: View {
                             Image(systemName: "house")
                             Text("Home")
                         }
-                        Text("Search").tabItem {
+                        ShopDetailPage().tabItem {
                             Image(systemName: "text.magnifyingglass")
-                            Text("Search")
+                            Text("Shop")
                         }
                         Text("Favourites").tabItem {
                             Image(systemName: "suit.heart")

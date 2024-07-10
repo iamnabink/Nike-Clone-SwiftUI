@@ -9,29 +9,18 @@ import SwiftUI
 
 struct LatestArrivalListPage: View {
     @State var index = 0
+    var titles = ["All", "Top & T-Shirts","Hoodies & Pull over","Shooes & Footwares"]
     var body: some View {
         VStack {
             VStack {
-                TabBarView(index: $index).padding(.vertical,10)
+                CustomTabItems(index: $index,titles: titles)
                 TabView(selection: $index) {
-                    ForEach (0..<4) { pageId in
+                    ForEach (0..<titles.count) { pageId in
                         ItemsGridView().tag(pageId)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             }
-            //            TabView{
-            //
-            //                Text("All").tabItem {
-            //                    Text("All")
-            //                }
-            //                Text("Top & T-Shirts").tabItem {
-            //                    Text("Top & T-Shirts")
-            //                }
-            //                Text("Hoodies & Pullover").tabItem {
-            //                    Text("Hoodies & Pullover")
-            //                }
-            //            }
             
         }.navigationTitle("N7 Collection").navigationBarTitleDisplayMode(.inline).navigationBarItems(trailing: HStack{
             Image(systemName: "slider.horizontal.3")
@@ -42,41 +31,7 @@ struct LatestArrivalListPage: View {
 }
 
 
-struct TabBarView: View {
-    @Binding var index: Int
-    private let leftOffset: CGFloat = 0.1
-    var titles = ["All", "Top & T-Shirts","Hoodies & Pull over","Shooes & Footwares"]
-    var body: some View {
-        ScrollViewReader { proxy in
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack {
-                    // alternative way fot his exp: titles.indices is 0..<titles.count
-                    ForEach(titles.indices,id: \.self) {id in
-                        let title = Text(titles[id]).id(id)
-                            .onTapGesture {
-                                withAnimation() {
-                                    index = id
-                                }
-                            }
-                        if self.index == id {
-                            title.foregroundColor(.black)
-                        } else {
-                            title.foregroundColor(.gray)
-                        }
-                    }
-                    
-                    .padding(.horizontal, 5)
-                }
-                .padding(.leading, 20)
-            }.onChange(of: index) { oldValue, newValue in
-                withAnimation() {
-                    proxy.scrollTo(newValue, anchor: UnitPoint(x: UnitPoint.leading.x + leftOffset, y: UnitPoint.leading.y))
-                }
-            }.animation(.easeOut,value: index)
-        }
-    }
-    
-}
+
 
 struct ItemsGridView: View {
     let items = Array(1...10) // Sample data
