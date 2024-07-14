@@ -10,6 +10,7 @@
 		D1213E6E2C3C445E00BDC8D6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1213E6D2C3C445E00BDC8D6 /* Extensions.swift */; };
 		D143BE512C0E1F9900FE4002 /* RootNavPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143BE502C0E1F9900FE4002 /* RootNavPage.swift */; };
 		D143BE532C0E287100FE4002 /* LatestArrivalListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D143BE522C0E287100FE4002 /* LatestArrivalListPage.swift */; };
+		D146377C2C3EF3400089C28B /* GeStartedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146377B2C3EF3400089C28B /* GeStartedPage.swift */; };
 		D14B3DCC2C3E0D6F00F36121 /* CustomTabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B3DCB2C3E0D6F00F36121 /* CustomTabItems.swift */; };
 		D19370CF2C3D86DF005D36FE /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19370CE2C3D86DF005D36FE /* Closures.swift */; };
 		D19370D12C3D88A8005D36FE /* EventDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19370D02C3D88A8005D36FE /* EventDetailPage.swift */; };
@@ -49,6 +50,7 @@
 		D1213E6D2C3C445E00BDC8D6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D143BE502C0E1F9900FE4002 /* RootNavPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavPage.swift; sourceTree = "<group>"; };
 		D143BE522C0E287100FE4002 /* LatestArrivalListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestArrivalListPage.swift; sourceTree = "<group>"; };
+		D146377B2C3EF3400089C28B /* GeStartedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeStartedPage.swift; sourceTree = "<group>"; };
 		D14B3DCB2C3E0D6F00F36121 /* CustomTabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItems.swift; sourceTree = "<group>"; };
 		D19370CE2C3D86DF005D36FE /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
 		D19370D02C3D88A8005D36FE /* EventDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPage.swift; sourceTree = "<group>"; };
@@ -116,6 +118,22 @@
 			isa = PBXGroup;
 			children = (
 				D143BE502C0E1F9900FE4002 /* RootNavPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D14637792C3EF3220089C28B /* AccountSetup */ = {
+			isa = PBXGroup;
+			children = (
+				D146377A2C3EF32A0089C28B /* Views */,
+			);
+			path = AccountSetup;
+			sourceTree = "<group>";
+		};
+		D146377A2C3EF32A0089C28B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D146377B2C3EF3400089C28B /* GeStartedPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +231,7 @@
 		D1DC45C22C0D88C500A3F79C /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				D14637792C3EF3220089C28B /* AccountSetup */,
 				D19370D22C3D97BA005D36FE /* Shop */,
 				D143BE4E2C0E1CEF00FE4002 /* RootNavigation */,
 				D1DC45D32C0DD37E00A3F79C /* Home */,
@@ -423,6 +442,7 @@
 				D1DC45CB2C0D903E00A3F79C /* SignupPage.swift in Sources */,
 				D19370D52C3D97D6005D36FE /* ShopDetailPage.swift in Sources */,
 				D1DC45CE2C0D9B2E00A3F79C /* CustomSpace.swift in Sources */,
+				D146377C2C3EF3400089C28B /* GeStartedPage.swift in Sources */,
 				D1DC45D62C0DD3A400A3F79C /* HomePage.swift in Sources */,
 				D1DC45982C0D88A500A3F79C /* NikeCloneApp.swift in Sources */,
 				D19370D12C3D88A8005D36FE /* EventDetailPage.swift in Sources */,
