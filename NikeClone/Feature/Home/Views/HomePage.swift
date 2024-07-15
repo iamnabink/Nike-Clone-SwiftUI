@@ -43,7 +43,7 @@ struct TopTitieView: View {
         VStack(alignment: .leading){
             Text("Discover").font(.title2.bold()).padding(.bottom,2)
             Text("Tuesday, 3 May").padding(.bottom,10)
-        }.padding(.horizontal,10)
+        }.padding(.horizontal,10).navigationBarBackButtonHidden()
     }
 }
 

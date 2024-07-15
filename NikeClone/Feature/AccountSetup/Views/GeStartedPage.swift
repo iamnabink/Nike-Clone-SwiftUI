@@ -10,19 +10,21 @@ import SwiftUI
 
 struct GetStartedPage: View {
     var body: some View {
-        ZStack {
-            BodyView()
-            
-            GeometryReader { geo in
-                VStack {
-                    ProgressView(value: 30, total: 100)
-                        .tint(.white)
-                        .background(.gray)
-                        .padding(.top, 20).padding(.horizontal,geo.size.width*0.25)
-                    
-                    Spacer() // Push the rest of the content to the bottom
+        NavigationStack {
+            ZStack {
+                BodyView()
+                
+                GeometryReader { geo in
+                    VStack {
+                        ProgressView(value: 30, total: 100)
+                            .tint(.white)
+                            .background(.gray)
+                            .padding(.top, 20).padding(.horizontal,geo.size.width*0.25)
+                        
+                        Spacer() // Push the rest of the content to the bottom
+                    }
+                    .padding(.horizontal, 20)
                 }
-                .padding(.horizontal, 20)
             }
         }
         
@@ -31,19 +33,24 @@ struct GetStartedPage: View {
 
 struct BodyView: View {
     @State private var currentPageId = 0 // 0 or 1
-    private var pages: [AnyView] = [AnyView(View1(callback: {
-        
-    })), AnyView(View2())]
     
     var body: some View {
-        pages[currentPageId]
+        var pages = [AnyView(View1(callback: {
+            currentPageId = 1
+        })), AnyView(View2())]
+
+        TabView(selection: $currentPageId) {
+            pages[currentPageId]
+        }
+        
     }
 }
 
 
+
 struct View2: View {
     @State private var isSelected = false // State to track selection
-    
+//    var callback : () -> Void
     var body: some View {
         ZStack {
             Color(.black).opacity(0.9).ignoresSafeArea()
@@ -77,6 +84,20 @@ struct View2: View {
                     }
                 }
                 Spacer()
+            }
+            VStack(alignment:.center){
+                Spacer()
+                NavigationLink(destination: {
+                    HomePage()
+                }, label: {
+                    Text("Done")
+                        .foregroundColor(.black)
+                        .padding(.horizontal,50).padding(.vertical,20)
+                        .background(.white)
+                        .cornerRadius(30)
+                    .padding(.bottom, 30)
+                })
+                
             }
         }
     }
