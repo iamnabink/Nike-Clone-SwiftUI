@@ -88,7 +88,7 @@ struct View2: View {
             VStack(alignment:.center){
                 Spacer()
                 NavigationLink(destination: {
-                    HomePage()
+                    MainRoute()
                 }, label: {
                     Text("Done")
                         .foregroundColor(.black)

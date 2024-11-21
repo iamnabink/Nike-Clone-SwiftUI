@@ -10,7 +10,7 @@ import SwiftUI
 struct RootNavPage: View {
     var body: some View {
                     TabView{
-                        HomePage().tabItem {
+                        MainRoute().tabItem {
                             Image(systemName: "house")
                             Text("Home")
                         }
